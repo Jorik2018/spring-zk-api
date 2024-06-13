@@ -1,0 +1,10 @@
+spring:
+  profiles: default
+  application:
+    name: zk-web
+server:
+  port: 7071
+  port3: ${PORT:0}
+intranet:
+  domain: http://localhost:8080
+device: 172.16.1.171, 172.16.1.172, 172.16.2.230, .172.16.1.154
