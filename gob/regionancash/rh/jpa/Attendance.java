@@ -1,45 +1,5 @@
-/*     */ package BOOT-INF.classes.gob.regionancash.rh.jpa;
-/*     */ 
-/*     */ import java.io.Serializable;
-/*     */ import java.util.Date;
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
+import java.io.Serializable;
+import java.util.Date;
 /*     */ 
 /*     */ public class Attendance
 /*     */   implements Serializable
