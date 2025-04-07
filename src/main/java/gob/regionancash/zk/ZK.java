@@ -140,12 +140,10 @@ public class ZK
     Variant second = new Variant(Integer.valueOf(0), true);
     
     Variant workCode = new Variant(Integer.valueOf(0), true);
-    
+
     while (readGeneralLogData) {
 
 
-
-      
       readGeneralLogData = this.zkem.invoke("SSR_GetGeneralLogData", new Variant[] { new Variant(this.machineNumber), enrollNumber, verifyMode, inOutMode, year, month, day, hour, minute, second, workCode }).getBoolean();
       int peopleId = toInt(enrollNumber);
       if (peopleId > 0) {

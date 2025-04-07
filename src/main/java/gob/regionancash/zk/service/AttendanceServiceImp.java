@@ -103,6 +103,8 @@ public class AttendanceServiceImp
     calendar.add(10, 24);
     calendar.add(13, -1);
     to = calendar.getTime();
+
+    
     List<LogData> data = zk.getLogDataList(from, to);
     List<Attendance> attendanceList = new ArrayList<>();
     for (LogData logData : data) {
