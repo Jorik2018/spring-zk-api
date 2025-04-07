@@ -75,6 +75,11 @@ public class ZKController {
     return this.attendanceService.connect(machine.intValue());
   }
 
+  @GetMapping({ "/test" })
+  public String connect(@PathVariable Integer machine) {
+    return "test:"+machine;
+  }
+
   @CrossOrigin
   @PostMapping({ "/{machine}/sync-attendance" })
   public Object syncAttendance(@PathVariable Integer machine, @RequestBody SyncAttendanceForm form) {
