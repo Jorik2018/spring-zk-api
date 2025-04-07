@@ -94,6 +94,7 @@ public class ZKController {
     List l = this.attendanceService.syncAttendance(machine.intValue(), from, to);
     map.put("machine", machine);
     map.put("size", Integer.valueOf(l.size()));
+    map.put("test", 12);
     return map;
   }
 }

@@ -36,22 +36,6 @@ public class AttendanceServiceImp
   
   private ZK.ZKListener zkListener = (ZK.ZKListener)new Object(this);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   @PostConstruct
   public void created() {
     String[] ips = this.device;
