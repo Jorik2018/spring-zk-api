@@ -104,8 +104,8 @@ public class AttendanceServiceImp
     calendar.add(13, -1);
     to = calendar.getTime();
 
-    
-    List<LogData> data = zk.getLogDataList(from, to);
+    List<LogData> data=new ArrayList();
+    /*List<LogData> data = zk.getLogDataList(from, to);
     List<Attendance> attendanceList = new ArrayList<>();
     for (LogData logData : data) {
       Attendance a = new Attendance();
@@ -121,7 +121,7 @@ public class AttendanceServiceImp
       a.setMachineNumber(logData.getMachineNumber());
       a.setVerifyMode(logData.getVerifyMode());
       attendanceList.add(a);
-    } 
+    } */
     SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     System.out.println("SyncAttendance from=" + format.format(from) + ";to=" + format.format(to) + ";send " + data.size());
     //String resultado = ">>>";//postForObject(data);
