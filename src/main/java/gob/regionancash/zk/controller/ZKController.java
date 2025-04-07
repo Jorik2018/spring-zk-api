@@ -56,10 +56,6 @@ public class ZKController {
     return this.attendanceService.getInfo(machine);
   }
 
-  @GetMapping({ "/test" })
-  public void getUserList2() {
-  }
-
   @GetMapping({ "/{machine}/users" })
   public List getUserList(@PathVariable Integer machine) {
     return this.attendanceService.getUserList(machine.intValue());
@@ -76,7 +72,7 @@ public class ZKController {
   }
 
   @GetMapping({ "/test" })
-  public String connect(@PathVariable Integer machine) {
+  public String test(@PathVariable Integer machine) {
     return "test:"+machine;
   }
 
