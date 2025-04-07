@@ -122,7 +122,7 @@ public class AttendanceServiceImp
     } 
     SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     System.out.println("SyncAttendance from=" + format.format(from) + ";to=" + format.format(to) + ";send " + data.size());
-    String resultado = postForObject(data);
+    //String resultado = ">>>";//postForObject(data);
     System.out.println("attendanceList.size()=" + attendanceList.size());
     return attendanceList;
   }
